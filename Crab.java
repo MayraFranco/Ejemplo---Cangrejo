@@ -15,8 +15,9 @@ public class Crab extends Actor
     public void act() 
     {
         // Add your action code here.
-        super.move(4);
-        if(Greenfoot.isKeyDown("right"))//si se presiono alguna tecla
+        super.move(4);//mueve
+        /***gira***/
+        if(Greenfoot.isKeyDown("right"))//si se presiono alguna tecla 
         {
             turn(3);
         }
@@ -27,6 +28,9 @@ public class Crab extends Actor
         if (isTouching(Worm.class))
         {
             removeTouching(Worm.class);
+            //sonido de comer
+            //todos los sonidos  van en la carpeta de sounds
+            Greenfoot.playSound("eating.wav");
         }
     }    
 }
