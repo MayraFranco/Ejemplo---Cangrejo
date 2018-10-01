@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Tiempo
+comment0.text=\n\ Write\ a\ description\ of\ class\ Tiempo\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Tiempo()
+comment1.text=se\ ejecuta\ al\ momento\ de\ crear\ un\ objeto\ **
+comment2.params=world
+comment2.target=void\ addedToWorld(greenfoot.World)
+comment2.text=se\ ejecuta\ al\ momento\ de\ agregar\ un\ objeto\ al\ mundo\ **
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\n\ Act\ -\ do\ whatever\ the\ Tiempo\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+numComments=4
