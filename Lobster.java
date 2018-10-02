@@ -31,9 +31,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
             //gira en un numero aleatorio de 0 y 179 - 90, entre -90 y 90
             pasos = 0;
         }
+        /*
         if(isTouching(Crab.class))
         {
             removeTouching(Crab.class);
-        }
+        }*/
     }    
 }

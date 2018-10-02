@@ -1,4 +1,4 @@
-or.gef import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Tiempo here.
@@ -35,7 +35,7 @@ public class Tiempo extends Actor
             contador.setValue(contador.getValue()-1); 
             //set value: modifica
             //get value: obtenemos el valor
-            if(contador.getValue == 0)
+            if(contador.getValue() == 0)
             {
                 Greenfoot.stop();
             }
