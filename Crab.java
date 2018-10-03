@@ -46,7 +46,16 @@ public class Crab extends Actor
         {
             vidas.setValue(vidas.getValue()-1);
             setLocation(200,200);
+            //getWorld().showText("Perdiste una vida", 300, 300);
+            Label  perdiste = new Label("Perdiste una vida", 30);
+            getWorld().addObject(perdiste, 250,250); //agrega el objeto
+            Greenfoot.delay(50); //se espera 50 pasos 
+            getWorld().removeObject(perdiste);//Remueve el objeto perdiste
             getWorldOfType(CrabWorld.class).accede().setLocation(250,500);
+            if(vidas.getValue()==0)
+            {
+                Greenfoot.stop();
+            }
         }
     }    
 }

@@ -15,8 +15,7 @@ public class CrabWorld extends greenfoot.World
     public int n;
     private Lobster lobster;
     private Crab crab;
-    
-    
+    private GreenfootSound musica;
     public CrabWorld(int n)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -28,10 +27,21 @@ public class CrabWorld extends greenfoot.World
         addObject(lobster,464,321);
         crab = new Crab();
         addObject(crab,173,310);
-        
+        musica = new GreenfootSound("ufo-t-balt.mp3");
         prepare();
+        
     }
-      public Lobster accede()
+    public void started()
+     {
+        musica.playLoop();
+    }
+   
+    public void stopped()
+    {
+        musica.pause();
+    }
+     
+    public Lobster accede()
     {   
         return lobster;
     }
